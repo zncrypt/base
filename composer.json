@@ -1,5 +1,5 @@
 {
-	"name": "php7bundle/crypt",
+	"name": "zncrypt/base",
 	"type": "extension",
 	"license": "MIT",
 	"authors": [
