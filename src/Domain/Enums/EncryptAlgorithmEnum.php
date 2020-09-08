@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpBundle\Crypt\Domain\Enums;
+namespace ZnCrypt\Base\Domain\Enums;
 
-use PhpLab\Core\Domain\Base\BaseEnum;
+use ZnCore\Base\Domain\Base\BaseEnum;
 
 class EncryptAlgorithmEnum extends BaseEnum
 {

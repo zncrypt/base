@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Crypt\Domain\Helpers;
+namespace ZnCrypt\Base\Domain\Helpers;
 
 class SafeBase64Helper
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace PhpBundle\Crypt\Domain\Enums;
+namespace ZnCrypt\Base\Domain\Enums;
 
-use PhpLab\Core\Domain\Base\BaseEnum;
+use ZnCore\Base\Domain\Base\BaseEnum;
 
 /**
  * Class HashAlgoEnum
  *
- * @package PhpBundle\Crypt\Domain\Enums
+ * @package ZnCrypt\Base\Domain\Enums
  */
 class HashAlgoEnum extends BaseEnum
 {
@@ -141,7 +141,7 @@ foreach (hash_algos() as $algo) {
     ];
 }
 EnumGeneratorHelper::generate([
-    'className' => '@PhpLab/Bundle/Crypt/Enums/HashAlgoEnum',
+    'className' => '@ZnSandbox/Bundle/Crypt/Enums/HashAlgoEnum',
     'const' => $algos,
 ]);
  */

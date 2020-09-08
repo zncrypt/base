@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpBundle\Crypt\Tests\Unit;
+namespace ZnCrypt\Base\Tests\Unit;
 
-use PhpLab\Test\Base\BaseTest;
+use ZnTool\Test\Base\BaseTest;
 
 final class ExampleTest extends BaseTest {
 

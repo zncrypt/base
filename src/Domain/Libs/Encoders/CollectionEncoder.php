@@ -1,11 +1,11 @@
 <?php
 
-namespace PhpBundle\Crypt\Domain\Libs\Encoders;
+namespace ZnCrypt\Base\Domain\Libs\Encoders;
 
 use Illuminate\Support\Collection;
-use PhpBundle\Crypt\Domain\Libs\Encoders\EncoderInterface;
-use PhpLab\Core\Domain\Helpers\EntityHelper;
-use PhpLab\Core\Helpers\InstanceHelper;
+use ZnCrypt\Base\Domain\Libs\Encoders\EncoderInterface;
+use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Base\Helpers\InstanceHelper;
 
 class CollectionEncoder implements EncoderInterface
 {

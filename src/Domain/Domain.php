@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpBundle\Crypt\Domain;
+namespace ZnCrypt\Base\Domain;
 
-use PhpLab\Core\Domain\Interfaces\DomainInterface;
+use ZnCore\Base\Domain\Interfaces\DomainInterface;
 
 class Domain implements DomainInterface
 {

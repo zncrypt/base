@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpBundle\Crypt\Domain\Libs\Encoders;
+namespace ZnCrypt\Base\Domain\Libs\Encoders;
 
-use PhpBundle\Crypt\Domain\Helpers\SafeBase64Helper;
+use ZnCrypt\Base\Domain\Helpers\SafeBase64Helper;
 
 class Base64Encoder implements EncoderInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpBundle\Crypt\Domain\Services;
+namespace ZnCrypt\Base\Domain\Services;
 
-use PhpBundle\Crypt\Domain\Exceptions\InvalidPasswordException;
-use PhpBundle\Crypt\Domain\Interfaces\Services\PasswordServiceInterface;
-use PhpLab\Core\Legacy\Yii\Base\Security;
+use ZnCrypt\Base\Domain\Exceptions\InvalidPasswordException;
+use ZnCrypt\Base\Domain\Interfaces\Services\PasswordServiceInterface;
+use ZnCore\Base\Legacy\Yii\Base\Security;
 
 class PasswordService implements PasswordServiceInterface
 {

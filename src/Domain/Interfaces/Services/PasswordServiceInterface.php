@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Crypt\Domain\Interfaces\Services;
+namespace ZnCrypt\Base\Domain\Interfaces\Services;
 
 interface PasswordServiceInterface
 {

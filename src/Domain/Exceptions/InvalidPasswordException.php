@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Crypt\Domain\Exceptions;
+namespace ZnCrypt\Base\Domain\Exceptions;
 
 class InvalidPasswordException extends \UnexpectedValueException
 {

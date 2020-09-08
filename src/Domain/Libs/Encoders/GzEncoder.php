@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpBundle\Crypt\Domain\Libs\Encoders;
+namespace ZnCrypt\Base\Domain\Libs\Encoders;
 
 class GzEncoder implements EncoderInterface
 {
