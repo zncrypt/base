@@ -4,7 +4,7 @@ namespace ZnCrypt\Base\Domain\Libs\Encoders;
 
 use Illuminate\Support\Collection;
 use ZnCrypt\Base\Domain\Libs\Encoders\EncoderInterface;
-use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Domain\Helpers\EntityHelper;
 use ZnCore\Base\Helpers\InstanceHelper;
 
 class CollectionEncoder implements EncoderInterface

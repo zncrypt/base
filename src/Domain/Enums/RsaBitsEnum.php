@@ -2,7 +2,7 @@
 
 namespace ZnCrypt\Base\Domain\Enums;
 
-use ZnCore\Base\Domain\Base\BaseEnum;
+use ZnCore\Domain\Base\BaseEnum;
 
 class RsaBitsEnum extends BaseEnum
 {
