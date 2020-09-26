@@ -2,14 +2,7 @@
 
 namespace ZnCrypt\Base\Domain\Enums;
 
-use ZnCore\Domain\Base\BaseEnum;
-
-/**
- * Class HashAlgoEnum
- *
- * @package ZnCrypt\Base\Domain\Enums
- */
-class HashAlgoEnum extends BaseEnum
+class HashAlgoEnum
 {
 
     const MD2 = 'md2';
@@ -121,11 +114,13 @@ class HashAlgoEnum extends BaseEnum
         self::RMD160 => OPENSSL_ALGO_RMD160,
     ];
 
-    public static function nameToOpenSsl(string $algo) {
+    public static function nameToOpenSsl(string $algo)
+    {
         return self::$openSsl[$algo];
     }
 
-    public static function openSslToName(string $algo) {
+    public static function openSslToName(string $algo)
+    {
         $assoc = array_flip(self::$openSsl);
         return $assoc[$algo];
     }
