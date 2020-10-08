@@ -2,7 +2,9 @@
 
 namespace ZnCrypt\Base\Domain\Enums;
 
-class EncryptFunctionEnum
+use ZnCore\Domain\Base\BaseEnum;
+
+class EncryptFunctionEnum extends BaseEnum
 {
 
     const HASH_HMAC = 'hash_hmac';

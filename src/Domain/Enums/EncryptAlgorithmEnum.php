@@ -2,7 +2,9 @@
 
 namespace ZnCrypt\Base\Domain\Enums;
 
-class EncryptAlgorithmEnum
+use ZnCore\Domain\Base\BaseEnum;
+
+class EncryptAlgorithmEnum extends BaseEnum
 {
 
     const SHA256 = 'SHA256';

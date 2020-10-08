@@ -2,7 +2,9 @@
 
 namespace ZnCrypt\Base\Domain\Enums;
 
-class RsaBitsEnum
+use ZnCore\Domain\Base\BaseEnum;
+
+class RsaBitsEnum extends BaseEnum
 {
 
     const BIT_512 = 512;

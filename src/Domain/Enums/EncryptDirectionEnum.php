@@ -2,7 +2,9 @@
 
 namespace ZnCrypt\Base\Domain\Enums;
 
-class EncryptDirectionEnum
+use ZnCore\Domain\Base\BaseEnum;
+
+class EncryptDirectionEnum extends BaseEnum
 {
 
     const ENCODE = 'encode';
