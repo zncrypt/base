@@ -2,9 +2,9 @@
 
 namespace ZnCrypt\Base\Domain\Libs\Encoders;
 
-use ZnCrypt\Tunnel\Domain\Libs\Tunnel\JsonFormatter;
-use ZnCrypt\Tunnel\Domain\Libs\Tunnel\StringFormatter;
-use ZnCrypt\Tunnel\Domain\Libs\Tunnel\TokenFormatter;
+use ZnCrypt\BaseTunnel\Domain\Libs\Tunnel\JsonFormatter;
+use ZnCrypt\BaseTunnel\Domain\Libs\Tunnel\StringFormatter;
+use ZnCrypt\BaseTunnel\Domain\Libs\Tunnel\TokenFormatter;
 use phpDocumentor\Reflection\Types\Object_;
 
 class CryptoEncoder

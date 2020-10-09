@@ -2,12 +2,14 @@
 
 namespace ZnCrypt\Base\Domain\Enums;
 
+use ZnCore\Domain\Base\BaseEnum;
+
 /**
  * Class HashAlgoEnum
  *
  * @package ZnCrypt\Base\Domain\Enums
  */
-class HashAlgoEnum
+class HashAlgoEnum extends BaseEnum
 {
 
     const MD2 = 'md2';
