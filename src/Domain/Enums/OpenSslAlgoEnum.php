@@ -17,20 +17,27 @@ class OpenSslAlgoEnum
     const RMD160 = 'openssl-rmd160';
 
     public static $openSsl = [
-        self::SHA1 => OPENSSL_ALGO_SHA1,
-        self::MD5 => OPENSSL_ALGO_MD5,
-        self::MD4 => OPENSSL_ALGO_MD4,
-//        self::MD2 => OPENSSL_ALGO_MD2,
-//        self::DSS1 => OPENSSL_ALGO_DSS1,
-        self::SHA224 => OPENSSL_ALGO_SHA224,
-        self::SHA256 => OPENSSL_ALGO_SHA256,
-        self::SHA384 => OPENSSL_ALGO_SHA384,
-        self::SHA512 => OPENSSL_ALGO_SHA512,
-        self::RMD160 => OPENSSL_ALGO_RMD160,
+
     ];
 
+    public static function assoc(): array {
+        return [
+            self::SHA1 => OPENSSL_ALGO_SHA1,
+            self::MD5 => OPENSSL_ALGO_MD5,
+            self::MD4 => OPENSSL_ALGO_MD4,
+//        self::MD2 => OPENSSL_ALGO_MD2,
+//        self::DSS1 => OPENSSL_ALGO_DSS1,
+            self::SHA224 => OPENSSL_ALGO_SHA224,
+            self::SHA256 => OPENSSL_ALGO_SHA256,
+            self::SHA384 => OPENSSL_ALGO_SHA384,
+            self::SHA512 => OPENSSL_ALGO_SHA512,
+            self::RMD160 => OPENSSL_ALGO_RMD160,
+        ];
+    }
+
     public static function nameToOpenSsl(string $algo): int {
-        return self::$openSsl[$algo];
+        $assoc = self::assoc();
+        return $assoc[$algo];
     }
 
     /*public static function openSslToName(string $algo): string {
