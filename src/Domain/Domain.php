@@ -9,9 +9,6 @@ class Domain implements DomainInterface
 
     public function getName()
     {
-        return 'crypt';
+        return 'crypt_base';
     }
-
-
 }
-
