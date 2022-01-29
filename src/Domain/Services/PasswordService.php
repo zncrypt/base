@@ -18,7 +18,7 @@ class PasswordService implements PasswordServiceInterface
 
     public function validate(string $password, string $hash): bool
     {
-        $isValidPassword = $this->passwordHasher->verify($hash, $password);
+        $isValidPassword = $this->passwordHasher->verify(trim($hash), trim($password));
         if (!$isValidPassword) {
             throw new InvalidPasswordException;
         }
