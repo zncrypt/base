@@ -7,7 +7,7 @@ use Psr\Container\ContainerInterface;
 use ZnCore\Base\Libs\Code\InstanceResolver;
 use ZnCore\Base\Libs\Container\Traits\ContainerAwareTrait;
 use ZnCrypt\Base\Domain\Libs\Encoders\EncoderInterface;
-use ZnCore\Domain\Helpers\EntityHelper;
+use ZnCore\Base\Libs\Entity\Helpers\EntityHelper;
 use ZnCore\Base\Helpers\InstanceHelper;
 
 class CollectionEncoder implements EncoderInterface
