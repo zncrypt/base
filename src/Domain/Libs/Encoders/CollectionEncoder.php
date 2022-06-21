@@ -4,11 +4,11 @@ namespace ZnCrypt\Base\Domain\Libs\Encoders;
 
 use Illuminate\Support\Collection;
 use Psr\Container\ContainerInterface;
-use ZnCore\Base\Libs\Code\InstanceResolver;
-use ZnCore\Base\Libs\Container\Traits\ContainerAwareTrait;
-use ZnCrypt\Base\Domain\Libs\Encoders\EncoderInterface;
-use ZnCore\Base\Libs\Entity\Helpers\EntityHelper;
 use ZnCore\Base\Helpers\InstanceHelper;
+use ZnCore\Base\Libs\Container\Traits\ContainerAwareTrait;
+use ZnCore\Base\Libs\Entity\Helpers\EntityHelper;
+use ZnCore\Contract\Encoder\Interfaces\DecodeInterface;
+use ZnCore\Contract\Encoder\Interfaces\EncodeInterface;
 
 class CollectionEncoder implements EncoderInterface
 {
@@ -23,27 +23,28 @@ class CollectionEncoder implements EncoderInterface
         $this->setContainer($container);
     }
 
-    public function encode($data) {
+    public function encode($data)
+    {
         $data = EntityHelper::toArray($data);
         $encoders = $this->encoderCollection->all();
         foreach ($encoders as $encoderClass) {
-            /** @var EncoderInterface $encoderInstance */
+            /** @var EncodeInterface $encoderInstance */
 //            (new InstanceResolver($this->ensureContainer()))->ensure();
-            $encoderInstance = InstanceHelper::ensure($encoderClass);
+            $encoderInstance = InstanceHelper::ensure($encoderClass, [], $this->ensureContainer());
             $data = $encoderInstance->encode($data);
         }
         return $data;
     }
 
-    public function decode($data) {
+    public function decode($data)
+    {
         $encoders = $this->encoderCollection->all();
         $encoders = array_reverse($encoders);
         foreach ($encoders as $encoderClass) {
-            /** @var EncoderInterface $encoderInstance */
-            $encoderInstance = InstanceHelper::ensure($encoderClass);
+            /** @var DecodeInterface $encoderInstance */
+            $encoderInstance = InstanceHelper::ensure($encoderClass, [], $this->ensureContainer());
             $data = $encoderInstance->decode($data);
         }
         return $data;
     }
-
 }
