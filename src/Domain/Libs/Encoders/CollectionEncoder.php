@@ -4,7 +4,7 @@ namespace ZnCrypt\Base\Domain\Libs\Encoders;
 
 use Illuminate\Support\Collection;
 use Psr\Container\ContainerInterface;
-use ZnCore\Base\Helpers\InstanceHelper;
+use ZnCore\Base\Libs\Instance\Helpers\InstanceHelper;
 use ZnCore\Base\Libs\Container\Traits\ContainerAwareTrait;
 use ZnCore\Domain\Entity\Helpers\EntityHelper;
 use ZnCore\Contract\Encoder\Interfaces\DecodeInterface;
