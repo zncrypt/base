@@ -2,7 +2,7 @@
 
 namespace ZnCrypt\Base\Domain\Libs\Encoders;
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use Psr\Container\ContainerInterface;
 use ZnCore\Base\Instance\Helpers\InstanceHelper;
 use ZnCore\Base\Container\Traits\ContainerAwareTrait;
