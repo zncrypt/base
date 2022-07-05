@@ -2,6 +2,7 @@
 
 namespace ZnCrypt\Base\Domain\Libs\Encoders;
 
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
 use Psr\Container\ContainerInterface;
 use ZnCore\Base\Instance\Helpers\InstanceHelper;
@@ -17,7 +18,7 @@ class CollectionEncoder implements EncoderInterface
 
     private $encoderCollection;
 
-    public function __construct(Collection $encoderCollection, ContainerInterface $container = null)
+    public function __construct(Enumerable $encoderCollection, ContainerInterface $container = null)
     {
         $this->encoderCollection = $encoderCollection;
         $this->setContainer($container);
