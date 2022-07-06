@@ -3,12 +3,12 @@
 namespace ZnCrypt\Base\Domain\Libs\Encoders;
 
 use Psr\Container\ContainerInterface;
-use ZnCore\Base\Container\Traits\ContainerAwareTrait;
+use ZnCore\Container\Traits\ContainerAwareTrait;
 use ZnCore\Base\Instance\Helpers\InstanceHelper;
 use ZnCore\Contract\Encoder\Interfaces\DecodeInterface;
 use ZnCore\Contract\Encoder\Interfaces\EncodeInterface;
-use ZnCore\Domain\Collection\Interfaces\Enumerable;
-use ZnCore\Domain\Entity\Helpers\EntityHelper;
+use ZnCore\Collection\Interfaces\Enumerable;
+use ZnCore\Entity\Helpers\EntityHelper;
 
 class CollectionEncoder implements EncoderInterface
 {
