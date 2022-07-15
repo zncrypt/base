@@ -8,7 +8,7 @@ use ZnCore\Instance\Helpers\InstanceHelper;
 use ZnCore\Contract\Encoder\Interfaces\DecodeInterface;
 use ZnCore\Contract\Encoder\Interfaces\EncodeInterface;
 use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Entity\Helpers\EntityHelper;
+use ZnDomain\Entity\Helpers\EntityHelper;
 
 class CollectionEncoder implements EncoderInterface
 {
